@@ -35,7 +35,10 @@ app.use(
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://studynotion-client-aq59.onrender.com",
+    ],
     credentials: true,
   })
 );
